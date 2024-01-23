@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopeasy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .brand-title{
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Arial;
+        }
+        nav span{
+            font-size: 18px;
+            font-family: Arial;
+            margin-right: 15px;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        article{
+            background-color:black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-family: Arial;
+            font-weight: bold;
+
+        }
+        .bi-lightning-fill{
+            color: goldenrod;
+        }
+        main{
+            height: 450px;
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            grid-gap: 5px;
+            margin-top: 10px;
+
+        }
+
+        .women{
+            background-image: url(image1.jpg);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            
+            }
+        .men {
+            background-image: url(image2.jpg);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            
+            }
+        .kids {
+            background-image: url(image3.jpg);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            
+            }
+            button{
+                background-color: white;
+                border: none;
+                font-size: 20px;
+                padding: 15px;
+                width: 200px;
+                
+            }
+            .main-title{
+                font-size: 50px;
+                color: white;
+                font-weight: bold;
+                text-shadow: 2px 2px 1px rgb(4, 4, 4);
+            }
+            .trends{
+            padding: 100px;
+            text-align: center;
+            }
+            .trends span{
+            display: block;
+            margin-bottom: 20px;
+            }
+            .trends-subtitle{
+                color: gray;
+                font-size: 20px;
+                font-family: Arial;
+            }
+            .trends-title{
+                font-size: 40px;
+                font-weight: bold;
+                font-family: Arial;
+            }
+            .trends-text{
+                font-size: 20px;
+                font-family: Arial;
+                padding-left: 150px;
+                padding-right: 150px;
+            }
+             .main1{
+                display: flex;
+                margin-top: 20px;
+                justify-content: space-evenly;
+                width: 95%;
+                margin-left: 25px;
+                border-bottom: 1px solid rgb(220, 219, 219);
+                padding-bottom: 40px;
+             
+            }
+
+            .bi-truck, .bi-arrow-return-right, .bi-bag, .bi-tag{
+                font-size: 20px;
+                font-weight: bold;
+                color: orangered;
+            }
+            .trendss{
+            height: 70vh;
+            width: 100%;
+            display: flex;
+            gap: 50px;
+            padding: 20px;
+            }
+            
+            .ss1{
+            background-image: url(image4.jpg);
+            background-size:cover;
+            width: 40%;
+            height: 65vh;
+            margin-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: Arial;
+            }
+            .ss2{
+            background-image: url(image5.jpg);
+            background-size:cover;
+           margin-right: 80px;
+            height: 65vh;
+            width: 100%;
+            margin-right: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            }
+         
+            .basic{
+            height: 70vh;
+            width: 100%;
+            display: flex;
+            gap:-50px;
+            padding: 20px;
+            }
+
+            .ss3{
+            background-image: url(image6.jpg);
+            background-size:cover;
+            margin-right: 100px;
+            height: 65vh;
+            width: 100%;
+            margin-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            }
+            .ss4{
+             background-image: url(image7.jpg);
+            background-size:cover;
+            width: 40%;
+            height: 65vh;
+            margin-right: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: Arial;
+            }
+
+        .offer{
+         width: 85px;
+         height: 85px;
+         border-radius: 50px;
+         font-size: 20px;
+         font-weight: bold;
+         background-color: red;
+         color:white;
+         text-align: center;
+         padding: 2px;
+         position: absolute;
+         right: 50px;
+         top: 10px;
+        }
+
+        .product{
+            font-size: 20px;
+            font-family: Arial;
+            margin-top: 50px;
+            align-items: center;
+            text-align: center;
+    
+            
+            
+        }
+        a{
+            text-decoration: none;
+            padding: 10px;
+       
+        }
+       
+            
+          
+        
+        .ssss{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 60px;
+        }
+
+       
+
+        .img1{
+            width: 300px;
+            height: 300px;
+            background-image: url(image8.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            transition: 1s;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .img1:hover{
+            background-image: url(image9.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            transition: 1s;
+        }
+        .img1:hover .shortcut-icon{
+            transform: translateY(220px);
+            transition: 1s;
+        }
+        .shortcut-icon span{
+            display: inline-block;
+            padding: 5px;
+            font-size: 15px;
+            border-radius: 10px;
+            background-color: white;
+            border: 1px solid gray;
+            width: 30px;
+            height: 30px;
+            margin-right: 5px;
+        }
+        .shortcut-icon span:hover{
+            background-color: red;
+            color: white;
+            transition: 1s;
+
+        }
+        .shortcut-icon{
+            transform: translateY(320px);
+        }
+
+
+        .img2{
+            width: 300px;
+            height: 300px;
+            background-image: url(image10.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            transition: 1s;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .img2:hover{
+            background-image: url(image11.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            transition: 1s;
+        }
+        .img2:hover .shortcut-icon{
+            transform: translateY(220px);
+            transition: 1s;
+        }
+        .shortcut-icon span{
+            display: inline-block;
+            padding: 5px;
+            font-size: 15px;
+            border-radius: 10px;
+            background-color: white;
+            border: 1px solid gray;
+            width: 30px;
+            height: 30px;
+            margin-right: 5px;
+        }
+        .shortcut-icon span:hover{
+            background-color: red;
+            color: white;
+            transition: 1s;
+
+        }
+        .shortcut-icon{
+            transform: translateY(320px);
+        }
+
+        .img3{
+            width: 300px;
+            height: 300px;
+            background-image: url(image12.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            transition: 1s;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .img3:hover{
+            background-image: url(image13.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            transition: 1s;
+        }
+        .img3:hover .shortcut-icon{
+            transform: translateY(220px);
+            transition: 1s;
+        }
+        .shortcut-icon span{
+            display: inline-block;
+            padding: 5px;
+            font-size: 15px;
+            border-radius: 10px;
+            background-color: white;
+            border: 1px solid gray;
+            width: 30px;
+            height: 30px;
+            margin-right: 5px;
+        }
+        .shortcut-icon span:hover{
+            background-color: red;
+            color: white;
+            transition: 1s;
+
+        }
+        .shortcut-icon{
+            transform: translateY(320px);
+        }
+
+        .img4{
+            width: 300px;
+            height: 300px;
+            background-image: url(image14.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            transition: 1s;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        
+        
+        .img4:hover .shortcut-icon{
+            transform: translateY(220px);
+            transition: 1s;
+        }
+        .shortcut-icon span{
+            display: inline-block;
+            padding: 5px;
+            font-size: 15px;
+            border-radius: 10px;
+            background-color: white;
+            border: 1px solid gray;
+            width: 30px;
+            height: 30px;
+            margin-right: 5px;
+        }
+        .shortcut-icon span:hover{
+            background-color: red;
+            color: white;
+            transition: 1s;
+
+        }
+        .shortcut-icon{
+            transform: translateY(320px);
+        }
+       
+
+        .ssss{
+            display: flex;
+            justify-content: space-around;
+            
+            margin-top: 60px;
+        }
+
+        .img5{
+            width: 300px;
+            height: 300px;
+            background-image: url(image15.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            transition: 1s;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+      
+        
+        .img5:hover .shortcut-icon{
+            transform: translateY(220px);
+            transition: 1s;
+        }
+        .shortcut-icon span{
+            display: inline-block;
+            padding: 5px;
+            font-size: 15px;
+            border-radius: 10px;
+            background-color: white;
+            border: 1px solid gray;
+            width: 30px;
+            height: 30px;
+            margin-right: 5px;
+        }
+        .shortcut-icon span:hover{
+            background-color: red;
+            color: white;
+            transition: 1s;
+
+        }
+        .shortcut-icon{
+            transform: translateY(320px);
+        }
+
+
+        .img6{
+            width: 300px;
+            height: 300px;
+            background-image: url(image16.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            transition: 1s;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .img6:hover{
+            background-image: url(image17.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            transition: 1s;
+        }
+        .img6:hover .shortcut-icon{
+            transform: translateY(220px);
+            transition: 1s;
+        }
+        .shortcut-icon span{
+            display: inline-block;
+            padding: 5px;
+            font-size: 15px;
+            border-radius: 10px;
+            background-color: white;
+            border: 1px solid gray;
+            width: 30px;
+            height: 30px;
+            margin-right: 5px;
+        }
+        .shortcut-icon span:hover{
+            background-color: red;
+            color: white;
+            transition: 1s;
+
+        }
+        .shortcut-icon{
+            transform: translateY(320px);
+        }
+
+        .img7{
+            width: 300px;
+            height: 300px;
+            background-image: url(image18.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            transition: 1s;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .img7:hover{
+            background-image: url(image19.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            transition: 1s;
+        }
+        .img7:hover .shortcut-icon{
+            transform: translateY(220px);
+            transition: 1s;
+        }
+        .shortcut-icon span{
+            display: inline-block;
+            padding: 5px;
+            font-size: 15px;
+            border-radius: 10px;
+            background-color: white;
+            border: 1px solid gray;
+            width: 30px;
+            height: 30px;
+            margin-right: 5px;
+        }
+        .shortcut-icon span:hover{
+            background-color: red;
+            color: white;
+            transition: 1s;
+
+        }
+        .shortcut-icon{
+            transform: translateY(320px);
+        }
+
+
+        .img8{
+            width: 300px;
+            height: 300px;
+            background-image: url(image20.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            transition: 1s;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .img8:hover .shortcut-icon{
+            transform: translateY(220px);
+            transition: 1s;
+        }
+        .shortcut-icon span{
+            display: inline-block;
+            padding: 5px;
+            font-size: 15px;
+            border-radius: 10px;
+            background-color: white;
+            border: 1px solid gray;
+            width: 30px;
+            height: 30px;
+            margin-right: 5px;
+        }
+        .shortcut-icon span:hover{
+            background-color: red;
+            color: white;
+            transition: 1s;
+
+        }
+        .shortcut-icon{
+            transform: translateY(320px);
+        }
+        .Discover {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+            font-weight: bold;
+            width: 160px;
+            margin-left:510px ;
+            
+        }
+        .Discover:hover{
+            border-bottom: 1px solid gray;
+
+        
+        }
+        .dd{
+            background-image: url(image21.jpg);
+            margin-top: 70px;
+            height:  85vh;
+        }
+       .dd1{
+        text-align: center;
+        padding-top: 170px;
+        margin-right: 100px;
+       }
+       
+     .latest{
+        
+        font-family: Arial;
+        margin-top: 50px;
+        align-items: center;
+        text-align: center;
+     }
+    
+     .ff1{
+        border: 1px solid gray;
+        width: 320px;
+        height: 320px;
+        margin-top: 70px;
+     }
+     .ff2{
+        padding: 15px;
+     }
+     .ff{
+        display: flex;
+        justify-content: space-around;
+       
+     }
+    
+     
+     .end{
+        display: flex;
+        gap: 10px;
+        justify-content: space-evenly;
+        margin: 80px 80px 0px 100px;
+        padding-top:1px;
+       
+        
+       
+     }
+     .end0{
+        height: 110vh;
+        background-color: rgb(221, 217, 217);
+        margin-top: 140px;
+     }
+     .last{
+        text-align: center;
+        padding-top: 90px;
+     }
+     
+
+    .photo1{
+        background-image: url(image25.jpg);
+        width: 170px;
+        height: 170px;
+        background-size: cover;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        transition: 1s; 
+        padding: 10px;    
+        display: flex;
+        justify-content: center;
+     }
+     .photo1:hover .shortcut-icon1{
+        transform: translateY(170px);
+      
+    }
+    .shortcut-icon1{
+        align-items: center;
+        margin-top: 70px;
+    }
+   
+     
+     
+   .photo2{
+        background-image: url(image26.jpg);
+        width: 170px;
+        height: 170px;
+        background-size: 100%;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        transition: 1s; 
+        padding: 10px;    
+        display: flex;
+        justify-content: center;
+     }
+     
+    .photo2:hover .shortcut-icon1{
+        transform: translateY(170px);
+      
+    }
+     .photo3{
+       background-image: url(image25.jpg);
+       width: 170px;
+        height: 170px;
+        background-size: 100%;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        transition: 1s; 
+        padding: 10px;    
+        display: flex;
+        justify-content: center;
+     }
+     
+    .photo3:hover .shortcut-icon1{
+        transform: translateY(170px);
+      
+    }
+    
+     
+     .photo4{
+        background-image: url(image27.jpg);
+        width: 170px;
+        height: 170px;
+        background-size: 100%;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        transition: 1s; 
+        padding: 10px;    
+        display: flex;
+        justify-content: center;
+     }
+     
+    .photo4:hover .shortcut-icon1{
+        transform: translateY(170px);
+      
+    }
+    
+     
+     
+    .photo5{
+        background-image: url(image28.jpg);
+        width: 170px;
+        height: 170px;
+        background-size: 100%;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        transition: 1s; 
+        padding: 10px;    
+        display: flex;
+        justify-content: center;
+     }
+     
+    .photo5:hover .shortcut-icon1{
+        transform: translateY(170px);
+      
+    }
+    
+     
+     
+    .photo6{
+        background-image: url(image29.jpg);
+        width: 170px;
+        height: 170px;
+        background-size: 100%;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        transition: 1s; 
+        padding: 10px;    
+        display: flex;
+        justify-content: center;
+     }
+     
+    .photo6:hover .shortcut-icon1{
+        transform: translateY(170px);
+       
+      
+    }
+    footer{
+        padding: 10px;
+        background-color: black;
+        color: white;
+        height: 600px;
+    }
+    .footer-title{
+        font-family: Arial;
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 25px;
+        display: inline-block;
+    
+    }
+    .title-container{
+        text-align: center;
+    }
+    .email{
+        background-color: rgb(71, 68, 68);
+        padding: 20px;
+        width: 350px;
+        display: inline-block;
+        margin-top: 20px;
+        text-align: left;
+
+    }
+    .subscribe{
+        background-color: rgb(103, 100, 100);
+        padding: 20px;
+        width: 150px;
+        display: inline-block;
+        margin-left: 15px;
+    }
+    .footer-container{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+     
+
+    }
+    .service-title{
+        font-weight: 30px;
+        font-size: 15px ;
+        font-family: Arial;
+        margin-bottom: 15px;
+    }
+    .service-title~span,address span{
+        display: block;
+        margin-bottom: 5px;
+        color: rgb(223, 216, 216);
+    }
+    .footer-brand{
+        font-size: 30px;
+        font-family: Arial;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    aside span{
+        font-size: 18px;
+        margin-right: 10px;
+    }
+   
+     
+    
+     
+     
+    
+      
+
+            
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <span class="brand-title">Shopeasy.</span>
+        </div>
+        <div>
+            <nav>
+                <span>Home</span>
+                <span>Catalog</span>
+                <span>Shop</span>
+                <span>Pages</span>
+                <span> Blog</span>
+                <span>Docs</span>
+            </nav>
+        </div>
+        <div>
+            <nav>
+                <span class="bi bi-serch"></span>
+                <span class="bi bi-person"></span>
+                <span class="bi bi-heart"></span>
+                <span class="bi bi-cart4"><span>
+             </span>
+            </nav>
+        </div>
+    </header>
+    <article>
+        <span class="bi bi-lightning-fill"></span>
+        <span>HAPPY HOLIDAY DEALS ON EVERYTHING</span>
+        <span class="bi bi-lightning-fill"></span>
+    </article>
+    
+        <main>
+            <div class="women">
+                <h1>Women</h1>
+                <button>
+                    Shop Women<span class="bi bi-arrow-right"></span>
+                </button> 
+                </div>
+                 <div class="men">
+                    <h1>Men</h1>
+                    <button >
+                        Shop Men<span class="bi bi-arrow-right"></span>
+                    </button>
+                 </div>
+                 <div class="kids">
+                    <h1>Kids</h1>
+                    <button >
+                        Shop Kids<span class="bi bi-arrow-right"></span> 
+                    </button>
+                 </div>
+        </main>
+
+        <div>
+        <div class="main1">
+            <div>
+                <div><span class="bi bi-truck"></span><span style="font-weight: bold;">FREE SHIPPING</span></div>
+                <div>From all orders over $100</div>
+            </div>
+            <div>
+                <div><span class="bi bi-arrow-return-right"></span style="font-weight: bold;">FREE RETURNS</span></div>
+                <div>Return money within 30 days</div>
+            </div>
+            <div>
+                <div><span class="bi bi-bag"></span><span style="font-weight: bold;">SECURE SHOPPING</span></div>
+                <div>You're in safe hands</div>
+            </div>
+            <div>
+                <div><span class="bi bi-tag"></span><span style="font-weight: bold;">OVER 10,000 STYLES</span></div>
+                <div>We have everything you need</div>
+        </div>
+        </div>
+
+
+        <div class="trends">
+            <span class="trends-subtitle" style="font-size: 15px;">NEW COLLECTION</span>
+            <span class="trend-title" style="font-weight: bold; font-size: 35px;">Best Picks 2019</span>
+            <span class="trend-text">Appear, dry there darkness they're seas, dry waters thing fly midst. Beast,<br> above fly brought Very green.</span>
+        </div>
+        
+     <div>
+       <div class="trendss">
+            <div class="ss1">
+                <h2>Bags Collection</h2>
+                <div>Shop Now<span class="bi bi-arrow-right"></span></div>
+            </div>
+             <div class="ss2">
+                
+                <h2>Printed mens Shirt</h2>
+                <div>Shop Now<span class="bi bi-arrow-right"></span></div>
+         
+                    
+            </div> 
+         </div>
+
+       <div>
+        <div class="basic">
+        <div class="ss3">
+            <h2>Basic womens Dresses</h2>
+            <div>Shop Now<span class="bi bi-arrow-right"></span></div>
+        </div> 
+        <div class="ss4">
+            <h2>Sweatshirts</h2>
+            <div>Shop Now<span class="bi bi-arrow-right"></span></div>
+        </div>       
+    </div>  
+    </div>
+</div>
+<div>
+    <div class="product">
+        <div style="font-size: 20px; font-family: Arial;">
+            <div >Top month Sellers</div>
+            <div style="margin-top: 10px; ">
+                <span ><a href="#"><span style="color: orangered;">Women</span></a></span>
+                <span><a href="#"><span style="color: orangered;">Men</span></a></span>
+                <span><a href="#"><span style="color: orangered;">Kids</span></a></span></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="ssss">
+    <div class="sss">
+        <div class="ttt">
+
+        <div class="img1">
+           
+            <div class="shortcut-icon">
+            <span class="bi bi-eye"></span>
+            <span class="bi bi-cart"></span>
+            <span class="bi bi-heart"></span>
+        </div>
+    </div>
+    <div class="Shoes">Shoes</div>
+    <div style="font-weight: bold; font-size: 15px;">Leather mid-heel Sandals</div>
+    <div class="shoes">$129.00</div>
+ </div>
+ </div>
+
+ <div class="sss">
+    <div class="ttt">
+
+    <div class="img2">
+        <h4></h4>
+        <div class="shortcut-icon">
+        <span class="bi bi-eye"></span>
+        <span class="bi bi-cart"></span>
+        <span class="bi bi-heart"></span>
+    </div>
+</div>
+<div class="Shoes">Dresses</div>
+<div style="font-weight: bold; font-size: 15px;">Cotton floral print Dress</div>
+<div class="shoes">$40.00</div>
+</div>
+</div>
+<div class="sss">
+    <div class="ttt">
+
+    <div class="img3">
+       
+        <div class="shortcut-icon">
+        <span class="bi bi-eye"></span>
+        <span class="bi bi-cart"></span>
+        <span class="bi bi-heart"></span>
+    </div>
+</div>
+<div class="Shoes">Shoes</div>
+<div style="font-weight: bold; font-size: 15px;">Leather Sneakers</div>
+<div class="shoes">$85.00</div>
+</div>
+</div>
+<div class="sss">
+    <div class="ttt">
+
+    <div class="img4">
+        <h4></h4>
+        <div class="shortcut-icon">
+        <span class="bi bi-eye"></span>
+        <span class="bi bi-cart"></span>
+        <span class="bi bi-heart"></span>
+
+    </div>
+</div>
+<div class="Shoes">Tops</div>
+<div style="font-weight: bold; font-size: 15px;">Cropped cotton Top</div>
+<div class="shoes">$29.00</div>
+       </div>
+   </div>
+</div>
+
+<div class="ssss">
+    <div class="sss">
+        <div class="ttt">
+
+        <div class="img5">
+           
+            <div class="shortcut-icon">
+            <span class="bi bi-eye"></span>
+            <span class="bi bi-cart"></span>
+            <span class="bi bi-heart"></span>
+        </div>
+    </div>
+    <div class="Shoes">Dresses</div>
+    <div style="font-weight: bold; font-size: 15px;">Floral print midi Dress</div>
+    <div class="shoes">$50.00</div>
+ </div>
+ </div>
+
+ <div class="sss">
+    <div class="ttt">
+
+    <div class="img6">
+        <h4></h4>
+        <div class="shortcut-icon">
+        <span class="bi bi-eye"></span>
+        <span class="bi bi-cart"></span>
+        <span class="bi bi-heart"></span>
+    </div>
+</div>
+<div class="Shoes">Bags</div>
+<div style="font-weight: bold; font-size: 15px;">Suede cross body Bag</div>
+<div class="shoes">$49.00</div>
+</div>
+</div>
+<div class="sss">
+    <div class="ttt">
+
+    <div class="img7">
+       
+        <div class="shortcut-icon">
+        <span class="bi bi-eye"></span>
+        <span class="bi bi-cart"></span>
+        <span class="bi bi-heart"></span>
+    </div>
+</div>
+<div class="Shoes">Skirts</div>
+
+<div style="font-weight: bold; font-size: 15px;">Printed A-line Skirt</div>
+<div class="shoes">$79.00</div>
+</div>
+</div>
+<div class="sss">
+    <div class="ttt">
+
+    <div class="img8">
+        <h4></h4>
+        <div class="shortcut-icon">
+        <span class="bi bi-eye"></span>
+        <span class="bi bi-cart"></span>
+        <span class="bi bi-heart"></span>
+
+    </div>
+</div>
+<div class="Shoes">Shoes</div>
+<div style="font-weight: bold; font-size: 15px;">Heel strappy Sandals</div>
+<div class="shoes">$90.00</div>
+        </div>
+   </div>
+</div>
+
+<div class="Discover">
+    <div>Discover</div>
+</div>
+
+<div class="dd">
+    <div class="dd1">
+    <div style="margin-left:400px ;">
+        <h6 style="font-weight: bold; font-size: 35px;">Get -50% from</h6>
+        <h6 style="font-weight: bold;  font-size: 35px; margin-left: 70px;">Summer Collection</h6><br>
+        <h6 style="font-weight: bold; color: orangered; font-size: 40px; margin-left: 60px;" >751 : 02 : 50 : 23</h6>
+        <h6 style="margin-left: 55px;">DAYS &nbsp; &nbsp;&nbsp;HOURS  &nbsp;&nbsp;&nbsp;  MINUTES &nbsp;&nbsp;&nbsp;SECONDS </h6><br>
+        <button style="background-color: black; color: white; margin-right: 45px;">
+            Shop Now<span class="bi bi-arrow-right"></span>
+        </button>
+    </div>
+    </div>
+  </div> 
+
+  <div class="latest">
+    <div style="font-size: 12px;">WHAT BUYERS SAY</div>
+    <div style="font-size: 32px; font-weight: bold;">Latest buyers Reviews</div>
+  </div>
+
+  <div class="ff" >
+    <div class="ff1">
+        <div class="ff2">
+        <div style="display: flex;">
+        <div  style="display: flex;">
+        <img src="image22.jpg" style="width: 60px;">
+        </div>
+
+        <div >
+        <div style="margin-left: 50px;">Shoes</div>
+        <div style="margin-left: 50px; font-weight: bold;">Oversized print T-shirt</div>
+        <div style="margin-left: 50px;">
+                        
+            <span class="bi bi-star-fill" style="color: orange;"></span>
+            <span class="bi bi-star-fill" style="color: orange;"></span>
+            <span class="bi bi-star-fill" style="color: orange;"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span> 
+                    
+             </div>
+            </div>
+        </div>
+   </div>
+            <div style="margin-left: 20px; margin-top: 20px; color: gray;">
+                <p>Fill his waters wherein signs likeness waters. Second light gathered appear sixth fourth, seasons behold creeping female.</p>
+            </div>
+            <div style="margin-left: 20px; color: gray;">Darrell Baker, 18 May 2019</div>
+              </div>
+
+   <div class="ff1">
+      <div class="ff2">
+        <div style="display: flex;">
+         <div  style="display: flex;">
+        <img src="image23.jpg" style="width: 60px;">
+        </div>
+
+        <div >
+        <div style="margin-left: 50px;">Dresses</div>
+        <div style="margin-left: 50px; font-weight: bold;">Oversized print T-shirt</div>
+        <div style="margin-left: 50px;">
+                                
+        <span class="bi bi-star-fill" style="color: orange;"></span>
+        <span class="bi bi-star-fill" style="color: orange;"></span>
+        <span class="bi bi-star-fill" style="color: orange;"></span>
+        <span class="bi bi-star-fill" style="color: orange;"></span>
+        <span class="bi bi-star-fill" style="color: orange;"></span> 
+            </div>
+        </div>
+    </div>
+ </div>
+
+    <div style="margin-left: 20px; margin-top: 20px; color: gray;">
+    <p>God every fill great replenish darkness unto. Very open. Likeness their that light. Given under image to. Subdue of shall cattle day fish form saw spirit and given stars, us you whales may, land, saw fill unto.</p>
+    </div>
+    <div style="margin-left: 20px; color: gray;">jane Jatferson, 291 29 May 2019</div>
+    </div>
+
+    <div class="ff1">
+    <div class="ff2">
+    <div style="display: flex;">
+    <div  style="display: flex;">
+    <img src="image24.jpg" style="width: 60px;">
+</div>
+
+    <div >
+    <div style="margin-left: 50px;">T-shirt</div>
+    <div style="margin-left: 50px; font-weight: bold;">Oversized print T-shirt</div>
+    <div style="margin-left: 50px;">
+                                        
+     <span class="bi bi-star-fill" style="color: orange;"></span>
+     <span class="bi bi-star-fill" style="color: orange;"></span>
+     <span class="bi bi-star-fill" style="color: orange;"></span>
+     <span class="bi bi-star-fill" style="color: orange;"></span>
+    <span class="bi bi-star-fill"></span> 
+        </div>
+     </div>
+    </div>
+</div>
+
+    <div style="margin-left: 20px; margin-top: 20px; color: gray;">
+    <p>Fill his waters wherein signs likeness waters. Second light gathered appear sixth fourth, seasons behold creeping female.</p>
+     </div>
+
+    <div style="margin-left: 20px; color: gray;">Darrell Baker, 18 May 2019</div>
+    </div>
+</div>
+</div>
+
+
+  <div class="end0">
+ 
+    <div class="last">
+        <div style="font-size: 35px; font-weight: bold;">@shopper</div><br>
+        <div style="font-size: 17px;  color: gray; ">Appear, dry there darkness they're seas, dry waters.</div>
+      </div>
+    
+<div class="end">
+        
+ <div class="photo1">
+    <div class="shortcut-icon1">
+        <span class="bi bi-heart"></span><span> &nbsp;428</span>&nbsp;
+        <span class="bi bi-chat-left"></span><span>&nbsp;7</span>&nbsp;
+    </div>
+    </div>
+
+ <div class="photo2">
+    <div class="shortcut-icon1">
+        <span class="bi bi-heart"></span><span> &nbsp;428</span>&nbsp;
+        <span class="bi bi-chat-left"></span><span>&nbsp;7</span>&nbsp;
+    </div>
+    </div>
+
+ <div class="photo3">
+    <div class="shortcut-icon1">
+        <span class="bi bi-heart"></span><span> &nbsp;428</span>&nbsp;
+        <span class="bi bi-chat-left"></span><span>&nbsp;7</span>&nbsp;
+    </div>
+    </div>
+
+ <div class="photo4">
+    <div class="shortcut-icon1">
+        <span class="bi bi-heart"></span><span> &nbsp;428</span>&nbsp;
+        <span class="bi bi-chat-left"></span><span>&nbsp;7</span>&nbsp;
+</div>
+</div>
+
+<div class="photo5">
+    <div class="shortcut-icon1">
+        <span class="bi bi-heart"></span><span> &nbsp;428</span>&nbsp;
+        <span class="bi bi-chat-left"></span><span>&nbsp;7</span>&nbsp;
+    </div>
+    </div>
+       
+<div class="photo6">
+    <div class="shortcut-icon1">
+        <span class="bi bi-heart"></span><span> &nbsp;428</span>
+        <span class="bi bi-chat-left"></span><span>&nbsp;7</span>
+    </div>
+  </div>
+</div>
+<div>
+    <div style="display: flex; justify-content: space-evenly;margin: 60px 30px 0px 50px;">
+        <div>
+            <img src="https://yevgenysim-turkey.github.io/shopper/assets/img/brands/gray-350/zara.svg">
+        </div>
+        <div>
+            <img src="https://yevgenysim-turkey.github.io/shopper/assets/img/brands/gray-350/reebok.svg">
+        </div>
+        <div>
+            <img src="https://yevgenysim-turkey.github.io/shopper/assets/img/brands/gray-350/asos.svg">
+        </div>
+        <div>
+            <img src="https://yevgenysim-turkey.github.io/shopper/assets/img/brands/gray-350/stradivarius.svg">
+        </div>
+        <div>
+            <img src="https://yevgenysim-turkey.github.io/shopper/assets/img/brands/gray-350/adidas.svg">
+        </div>
+        <div>
+            <img src="https://yevgenysim-turkey.github.io/shopper/assets/img/brands/gray-350/bershka.svg">
+        </div>
+    </div>
+</div>
+</div>
+</div>     
+</div>
+
+<footer>
+    <div class="title-container">
+    <div>
+        <span class="footer-title">Want style Ideas and Treats?</span>
+    </div>
+    <div>
+        <span class="email">Enter Email*</span>
+        <span class="subscribe">Subscribe</span>
+    </div>
+    </div>
+    <div class="footer-container">
+        <div>
+            <div class="footer-brand">Shopeasy.</div>
+            <aside>
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-twitter"></span>
+                <span class="bi bi-instagram"></span>
+                <span class="bi bi-linkedin"></span>
+            </aside>
+        </div>
+        <div>
+            <div class="service-title">SUPPORT</div>
+            <span>Contact Us</span>
+            <span>FAQs</span>
+            <span>Size Guide</span>
+            <span>Shipping & Returns</span>
+        </div>
+        <div>
+            <div class="service-title">SHOP</div>
+            <span>Men's Shopping</span>
+            <span>Women's Shopping</span>
+            <span>Kids' Shopping</span>
+            <span>Discounts</span> 
+        </div>
+        <div>
+            <div class="service-title">COMPANY</div>
+            <span>Our Story</span>
+            <span>Careers</span>
+            <span>Terms & Conditions</span>
+            <span>Privacy & Cookie policy</span> 
+        </div>
+        <div>
+            <div class="service-title">CONTACT</div>
+            <span>1-202-555-0105</span>
+            <span>1-202-555-0106</span>
+            <span>help@shopper.com</span>
+        </div>
+       </div>
+       <div style="border-top: 1px solid gray; margin-top: 170px;">
+    </div>
+    <div>
+        <div style="font-size: 12px; margin: 20px 0px 0px 50px; color: gray;">© 2019 All rights reserved. Designed by Unvab.</div>
+    </div>
+ </footer>
+</body>
+</html>
+        
+       
+
+       
+      
+       
+    
+      
+        
+        
+       
+        
+       
